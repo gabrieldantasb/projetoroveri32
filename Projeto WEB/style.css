@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8E8E8;
+  
+}
+
+.container-cronogramas{
+  display: flex;
+  gap: 50px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container-cronograma{
+  border: dashed 3.75px #58AE26;
+  position: relative;
+  background-color: #85F579;
+  width: 400px;
+  padding: 10px;
+  /*               Sombra                */
+  /*Horizontal Vertical Blur Spread Color*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 30px 30px;
+}
+.titulo-cronograma{
+  position:absolute;
+  top:-50px;
+  left:0;
+}
+
+.button-x{
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;    /*Alinhamento Vertical  */
+  justify-content: center;/*Alinhamento Horizontal*/
+  color: #C63F3F;
+  background-color: #303030;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+}
+
+.atividades{
+  /* border: dashed 1px black; */
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.atividade{
+  /* border: dashed 1px black; */
+  width: 90%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  justify-content: space-evenly;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+  /* Adiciona um Filtro em todas as Divs dentro de atividade */
+}
+
+.one{
+  /* border: dashed 1px black; */
+  display: flex;
+  justify-content: end;
+  height: inherit;
+  width:58%;
+  
+}
+.two{
+  /* border: dashed 1px black; */
+  height: inherit;
+  width:28%;
+}
+
+.three{
+  /* border: dashed 1px black; */
+  height: inherit;
+  width:8%;
+}
+.atividade-titulo{
+  /* border: dashed 1px black; */
+  width: max-content;
+  padding-inline: 15px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #FF668F 0%, #C540BF 100%);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.atividade-horario{
+  font-weight: 550;
+  padding-inline: 15px;
+  color: #A8A8A8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  background: #FFFFFF;
+  border-radius: 18px;
+}
+
+.horarios{
+  font-size: 11px;
+}
+
+.atividade-delete{
+  display: flex;
+  align-items: center;
+  height: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  color: #C63F3F;
+}
+
+.new-atitividade{
+  /* border: dashed 1px black; */
+  height: auto;
+  width: 78%;
+  font-size: 25px;
+  color: white;
+  margin-inline: auto;
+  text-align: end;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+}
+
+.tools{
+  position: absolute;
+  bottom: -50px;
+  left: calc(calc(400px / 2) - 20px);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+}
+
+.executar{
+  position: fixed;
+  width:100px;
+  height:100px;
+  left: 75px;
+  bottom: 100px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #32ACFC 0%, #3848D9 100%);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+  cursor: pointer;
+}
+
+.new-cronograma{
+  font-size: 50px;
+  color: white;
+  margin-inline: auto;
+  text-align: end;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.37));
+  cursor: pointer;
+  align-self: center;
+}
+
+.usuario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  font-size: 1em;
+  color:rgb(117, 117, 117);
+}
